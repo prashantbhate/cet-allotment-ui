@@ -1,0 +1,57 @@
+<div class="large-4 medium-4 columns">
+  <h5>Enter details to filter the result:</h5>
+  <hr />
+  <form>
+    <div class="row">
+      <div class="large-12 columns">
+        <label>College:</label>
+        {{input value=filterParams.college
+                key-up=(action 'handleFilterEntry' filterParams)
+                placeholder="College"}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 medium-6 columns">
+        <label>Branch:</label>
+        {{input value=filterParams.branch
+                key-up=(action 'handleFilterEntry' filterParams)
+                placeholder="Branch"}}
+
+      </div>
+      <div class="large-6 medium-6 columns">
+        <label>Quota:</label>
+        {{input value=filterParams.quota
+                key-up=(action 'handleFilterEntry' filterParams)
+                placeholder="Quota"}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <label>limit:</label>
+        {{input value=filterParams.limit
+                key-up=(action 'handleFilterEntry' filterParams)
+                placeholder="limit"}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 medium-6 columns">
+        <label>lowCutoffRank:</label>
+        {{input value=filterParams.lowCutoffRank
+                key-up=(action 'handleFilterEntry' filterParams)
+                placeholder="lowCutoffRank"}}
+      </div>
+      <div class="large-6 medium-6 columns">
+        <label>highCutoffRank:</label>
+        {{input value=filterParams.highCutoffRank
+                key-up=(action 'handleFilterEntry' filterParams)
+                placeholder="highCutoffRank"}}
+      </div>
+    </div>
+  </form>
+</div>
+<div class="large-8 medium-8 columns">
+  <div class="row small-up-2 medium-up-3">
+  {{yield results}}
+  </div>
+
+</div>

@@ -1,0 +1,10 @@
+{
+  "name": "cet-allotment-ui",
+  "description": "CET allotment viewer",
+  "repository": "https://github.com/prashantbhate/cet-allotment-ui",
+  "logo": "",
+  "keywords": ["ember.js", "static"],
+  "buildpacks": [
+    { "url": "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/emberjs.tgz" }
+  ]
+}
